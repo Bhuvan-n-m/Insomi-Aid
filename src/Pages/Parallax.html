@@ -1,0 +1,260 @@
+
+	<head>
+	<style>
+		body, html {
+  height: 100%;
+}
+
+body{
+  background-color: aqua;
+}
+
+div{
+  border-radius: 40px;
+  align-items: center;
+  align-self: center;
+}
+.App {
+  text-align: center;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url('data/Night.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box1 {
+  background-image: url('data/forest2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:1000px;
+  font-size:36px;
+  text-align: center;
+}
+.box2 {
+  background-image: url('data/river2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:1000px;
+  font-size:36px;
+  text-align: center;
+}
+.box3 {
+  background-image: url('data/rain2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:1000px;
+  font-size:36px;
+  text-align: center;
+}
+.box4 {
+  background-image: url('data/flute2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:1000px;
+  font-size:36px;
+  text-align: center;
+}
+.box5 {
+  background-image: url('data/beach.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:1000px;
+  font-size:36px;
+  text-align: center;
+}
+
+
+
+
+.river {
+  color:black;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+}
+ .forest{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  font-size: 35px;
+  height:50px;
+    width:250px;
+}
+
+.forest:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.river {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  font-size: 35px;
+  height:50px;
+    width:250px;
+}
+
+.river:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.rain {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+  font-size: 35px;
+  height:50px;
+    width:250px;
+}
+
+.rain:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.flute {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;
+  font-size: 35px;
+  height:50px;
+    width:250px;
+}
+
+.flute:hover {background-color: black;
+color:white}
+
+.beach{
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  font-size: 35px;
+  height:50px;
+    width:250px;
+}
+
+.beach:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+.stop{
+  background-color: rgb(230, 32, 32);
+  color:white;
+  height:50px;
+  width: 50px;
+  padding-bottom: 10px;
+}
+	</style>
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<!-- <link rel="stylesheet" href="ptest.css" /> -->
+		<title>InsomAID</title>
+		<script>
+			function playFunction1(){
+				document.getElementById("myAudio1").play();
+			}
+			function playFunction2(){
+				document.getElementById("myAudio2").play();
+			}
+			function playFunction3(){
+				document.getElementById("myAudio3").play();
+			}
+			function playFunction4(){
+				document.getElementById("myAudio4").play();
+			}
+			function playFunction5(){
+				document.getElementById("myAudio5").play();
+			}
+			function pauseFunction1(){
+				document.getElementById("myAudio1").pause();
+			}
+			function pauseFunction2(){
+				document.getElementById("myAudio2").pause();
+			}
+			function pauseFunction3(){
+				document.getElementById("myAudio3").pause();
+			}
+			function pauseFunction4(){
+				document.getElementById("myAudio4").pause();
+			}
+			function pauseFunction5(){
+				document.getElementById("myAudio5").pause();
+			}
+		</script>
+	</head>
+	
+	<body>
+
+		<div class="parallax"></div>
+
+		<div class="box1">
+			<audio src="data/harp.mp4" type="audio/mp4" id="myAudio1"></audio>
+			<button onclick="playFunction1()" type="button" class="forest">FOREST</button>
+			<button onclick="pauseFunction1()" type="button" class="stop"></button>
+			
+			
+		</div>
+		<div class="parallax" style="height: 150px;"></div>
+
+		<div class="box2" >
+			<audio src="data/riverflow.mp4" type="audio/mp4" id="myAudio2"></audio>
+			<button onclick="playFunction2()" type="button"  class="river">RIVER</button>
+			<button onclick="pauseFunction2()" type="button" class="stop"></button>
+			
+			
+		</div>
+		<div class="parallax" style="height: 150px;"></div>
+		<div class="box3" >
+		    <audio src="data/rain.mp4" type="audio/mp4" id="myAudio3"></audio>
+			<button onclick="playFunction3()" type="button"  class="rain">RAIN</button>
+			<button onclick="pauseFunction3()" type="button" class="stop"></button>
+			
+			
+		</div>
+
+		<div class="parallax" style="height: 150px;"></div>
+
+		<div class="box4" >
+			<audio src="data/flute_forest.mp4" type="audio/mp4" id="myAudio4"></audio>
+			<button onclick="playFunction4()" type="button"  class="flute">FLUTE</button>
+			<button onclick="pauseFunction4()" type="button" class="stop"></button>
+			
+		
+		</div>
+
+		<div class="parallax" style="height: 150px;"></div>
+
+		<div class="box5" >
+			<audio src="data/beach.mpeg" type="audio/mpeg" id="myAudio5"></audio>
+			<button onclick="playFunction5()" type="button"  class="beach">BEACH</button>
+			<button onclick="pauseFunction5()" type="button" class="stop"></button>
+			
+			
+		</div>
+      
+		<div class="parallax" style="height: 300px;"></div>
+
+	</body>
+
